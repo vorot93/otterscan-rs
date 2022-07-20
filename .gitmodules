@@ -1,0 +1,3 @@
+[submodule "src/otterscan"]
+	path = src/otterscan
+	url = https://github.com/wmitsuda/otterscan

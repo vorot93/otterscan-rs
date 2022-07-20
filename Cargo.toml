@@ -1,0 +1,22 @@
+[package]
+name = "otterscan"
+version = "0.1.0"
+edition = "2021"
+license = "GPL-3.0-or-later WITH Classpath-exception-2.0"
+description = "Rust wrapper for Otterscan."
+readme = "README.md"
+
+[dependencies]
+axum = { version = "0.5", features = ["json"] }
+clap = { version = "3", features = ["derive"] }
+hyper = "0.14"
+mime_guess = "2"
+rust-embed = "6"
+serde = { version = "1", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+[[bin]]
+path = "bin/otterscan.rs"
+name = "otterscan"
